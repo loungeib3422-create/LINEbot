@@ -43,9 +43,8 @@ from reportlab.lib import colors
 load_dotenv()
 CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN")
 CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET")
-SHEET_ID = os.getenv("SHEET_ID")
+SHEET_ID = os.getenv("1r-1gLv5tUW6bW_0heGdiNBNOkA6Qpv11RBufAAVPwWs")
 WORKSHEET_NAME = os.getenv("WORKSHEET_NAME", "シート1")
-FONT_PATH = os.getenv("FONT_PATH")  # 例: ./assets/NotoSansJP-Regular.ttf
 
 if not CHANNEL_ACCESS_TOKEN or not CHANNEL_SECRET:
     raise RuntimeError("環境変数 LINE_CHANNEL_ACCESS_TOKEN / LINE_CHANNEL_SECRET が未設定です")
